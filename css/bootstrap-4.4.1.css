@@ -4329,6 +4329,7 @@ input[type="button"].btn-block {
 	width: 50%;
 	overflow-y: auto;
 	padding-bottom: 8vh;
+	padding-right: 1vw;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
 }
@@ -4338,6 +4339,7 @@ input[type="button"].btn-block {
 	width: 50%;
 	overflow-y: auto;
 	padding-bottom: 8vh;
+	padding-left: 1vw;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
 }
@@ -4764,18 +4766,18 @@ input[type="button"].btn-block {
 }
 .popup .overlay-right {
 	position:fixed;
-	top:10%;
-	left:5%;
-	width:90%;
-	height:80%;
+	top:50vh;
+	left:50vw;
+	width:90vw;
+	height:80vh;
 	z-index: 4;
 	background:#76AB5A;
 	display:none
 }
 .popup .overlay-left{
 	position:fixed;
-	top:10vh;
-	left:5vw;
+	top:50vh;
+	left:50vw;
 	width:90vw;
 	height:80vh;
 	z-index: 4;
@@ -4815,17 +4817,16 @@ input[type="button"].btn-block {
 }
 
 .popup.active .overlay-right {
-	display:block;
+	display: inline-flex;
 	transition:all 300ms ease-in-out;
 	transform:translate(-50%, -50%) scale(1);
 }
 .popup.active .overlay-left{
-	display:block;
+	display: inline-flex;
 	transition:all 300ms ease-in-out;
 	transform:translate(-50%, -50%) scale(1);
 }
 .popup.active .background{
-	display: block;
 	transition:all 300ms ease-in-out;
 	transform:translate(-50%, -50%) scale(1);
 }
@@ -5360,7 +5361,26 @@ a.badge-dark:focus, a.badge-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.jumbotron {
+.jumbotron-left {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #286AA2;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron-left {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-left-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.jumbotron-right {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #36A485;
@@ -5368,12 +5388,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 @media (min-width: 576px) {
-  .jumbotron {
+  .jumbotron-right {
     padding: 4rem 2rem;
   }
 }
 
-.jumbotron-fluid {
+.jumbotron-right-fluid {
   padding-right: 0;
   padding-left: 0;
   border-radius: 0;
