@@ -4760,7 +4760,7 @@ input[type="button"].btn-block {
 	position:fixed;
 	width:100vw;
 	height:100vh;
-	background: url("images/OverlayBgr.png");
+	background-color: #434343;
 	z-index:3;
 	display: none;
 }
