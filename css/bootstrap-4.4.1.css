@@ -5364,7 +5364,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron-left {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #4062B3;
+  background-color: #63A5DE;
   border-radius: 0.3rem;
 }
 
@@ -5383,7 +5383,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron-right {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #36A485;
+  background-color: #89E683;
   border-radius: 0.3rem;
 }
 
@@ -6830,6 +6830,10 @@ a.close.disabled {
 
 .align-text-top {
   vertical-align: text-top !important;
+}
+.align-right {
+	text-align: right;
+	border: 0;
 }
 
 .bg-primary {
@@ -10287,6 +10291,17 @@ height: 600px; /* or any value */
 overflow-y: scroll;
 }
 .scrollable::-webkit-scrollable{
+	display: none;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+.scrollable-y {
+	height: 550px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+.scrollable-y::-webkit-scrollable{
 	display: none;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
