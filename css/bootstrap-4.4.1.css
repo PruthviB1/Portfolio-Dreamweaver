@@ -6832,8 +6832,11 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 .align-right {
+	position: absolute;
+	right: 20px;
 	text-align: right;
 	border: 0;
+	float: right;
 }
 
 .bg-primary {
