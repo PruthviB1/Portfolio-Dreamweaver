@@ -4769,7 +4769,7 @@ input[type="button"].btn-block {
 	top:50vh;
 	left:50vw;
 	width:90vw;
-	height:80vh;
+	height:85vh;
 	z-index: 4;
 	background:#76AB5A;
 	display:none
@@ -4779,7 +4779,7 @@ input[type="button"].btn-block {
 	top:50vh;
 	left:50vw;
 	width:90vw;
-	height:80vh;
+	height:85vh;
 	z-index: 4;
 	background:#4E77C1;
 	display: none
@@ -4837,8 +4837,8 @@ input[type="button"].btn-block {
 }
 
 .popup-image{
-	height:50vh;
-	width:auto;
+	height: 50vh;
+	width: auto;
 	align-content: left;
 	text-align: left;
 	display: inline-block;
