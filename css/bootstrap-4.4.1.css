@@ -4756,13 +4756,14 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+
 .popup .background{
 	position:fixed;
 	width:100vw;
 	height:100vh;
 	background-color: #434343;
+	display:none;
 	z-index:3;
-	display: none;
 }
 .popup .overlay-right {
 	position:fixed;
@@ -4770,9 +4771,9 @@ input[type="button"].btn-block {
 	left:50vw;
 	width:90vw;
 	height:85vh;
-	z-index: 4;
+	z-index: 3;
 	background:#76AB5A;
-	display:none
+	display:none;
 }
 .popup .overlay-left{
 	position:fixed;
@@ -4782,7 +4783,7 @@ input[type="button"].btn-block {
 	height:85vh;
 	z-index: 4;
 	background:#4E77C1;
-	display: none
+	display: none;
 }
 .popup .content{
 	position:fixed;
@@ -4791,29 +4792,39 @@ input[type="button"].btn-block {
 	transform:translate(-50%,-50%) scale(0);
 	backgound:#fff;
 	width:80%;
-	height:50%;
+	height:80%;
 	z-index:5;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 	text-align:right;
-	padding:20px;
+	padding:15px;
 	box-sizing:border-box;
-	display: inline-block
+	display: inline-block;
 }
 
 .popup .close-btn {
 	cursor:pointer;
-	position:absolute;
-	right:-5%;
-	top:-30%;
-	width:30px;
-	height:30px;
+	position:fixed;
+	z-index:10000;
+	right:0%;
+	top:0%;
+	width:20px;
+	height:20px;
 	background:#222;
 	color:#fff;
-	font-size:25px;
+	font-size:15pt;
+	line-height:0;
+	padding-top:8px;
 	font-weight:600;
-	line-height:30px;
 	text-align:center;
-	border-radius:50%
+	border-radius:50%;
 	
+}
+
+.popup .content::-webkit-scrollbar {
+	display: none;
 }
 
 .popup.active .overlay-right {
